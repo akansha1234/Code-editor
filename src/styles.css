@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+.top-pane {
+  background-color: hsl(225, 6%, 25%);
+}
+.pane {
+  height: auto;
+  display: flex;
+}
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5rem;
+  background-color: hsl(225, 6%, 25%);
+}
+.editor-container-collapsed {
+  flex-grow: 0;
+}
+.editor-container-collapsed .Codemirror-scroll {
+  position: absolute;
+}
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: white;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  overflow: hidden;
+}
