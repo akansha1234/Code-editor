@@ -38,3 +38,8 @@ body {
   border-bottom-left-radius: 0.5rem;
   overflow: hidden;
 }
+@media (max-width: 800px) {
+  .pane {
+    flex-direction: column;
+  }
+}
